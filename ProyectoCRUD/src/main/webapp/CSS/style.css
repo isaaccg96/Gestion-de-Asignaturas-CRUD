@@ -1,0 +1,95 @@
+body {
+    background-image: url('../IMG/bg4.png');
+    background-repeat: no-repeat;
+    background-position: 0 10%; /* Ajusta la posición de la imagen */
+    background-attachment: fixed; /* Fija la imagen para que no se mueva */
+    margin-top: 7%;
+    background-color: #f4f4f4;
+}
+
+/* Título h1 con efecto */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase; /* Poner el texto en mayúsculas */
+    letter-spacing: 3px; /* Espaciado entre letras */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    animation: fadeInUp 1s ease-out; /* Animación de entrada */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Estilo de las tarjetas */
+/* Estilo de las tarjetas */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Animación solo para el movimiento */
+    cursor: pointer; /* Añadir cursor pointer para indicar interacción */
+}
+
+/* Efecto al pasar el ratón por encima */
+.card:hover {
+    transform: translateY(-10px); /* Elevación */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+}
+
+/* Añadir animación a las tarjetas para que aparezcan con suavidad */
+.card {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px; /* Ajustar tamaño en pantallas más pequeñas */
+    }
+}
+
+
+/* Estilo personalizado para el botón btn-warning */
+.btn-warning-custom {
+    background-color: #0096DB; /* Color de fondo azul oficina */
+    color: white; /* Color del texto */
+    padding: 5px 12px; /* Relleno reducido para hacerlo más pequeño */
+    font-size: 14px; /* Tamaño de la fuente más pequeño */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transición suave */
+}
+
+/* Cambiar el color al pasar el ratón */
+.btn-warning-custom:hover {
+    background-color: #002664; /* Fondo más oscuro al pasar el ratón */
+    color: white;
+}
+
+/* Cambiar el color al hacer clic */
+.btn-warning-custom:active {
+    background-color: #7a8887; /* Fondo aún más oscuro al hacer clic */
+    border-color: #6b7a79; /* Borde más oscuro */
+}

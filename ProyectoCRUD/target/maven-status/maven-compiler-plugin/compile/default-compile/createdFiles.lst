@@ -1,0 +1,10 @@
+Controller\CriterioController.class
+Clases\ResultadoAprendizaje.class
+DAO\CriterioEvaluacionDAO.class
+DAO\AsignaturaDAO.class
+DAO\ResultadoAprendizajeDAO.class
+Controller\AsignaturaController.class
+Clases\Asignatura.class
+Clases\CriterioEvaluacion.class
+DAO\Database.class
+Controller\ResultadoController.class
