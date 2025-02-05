@@ -7,7 +7,7 @@
 
 <body>
     <div class="container mt-5">
-        <h1>Gesti髇 de Asignaturas</h1>
+        <h1>Gesti贸n de Asignaturas</h1>
 
         <!-- Mostrar mensaje si no hay asignaturas -->
         <% if (asignaturas.isEmpty()) { %>
@@ -30,7 +30,7 @@
                             <tr>
                                 <td><%= asignatura.getNombre() %></td>
                                 <td>
-                                    <!-- Bot髇 para editar con icono de l醦iz -->
+                                    <!-- Bot贸n para editar con icono de l谩piz -->
                                     <a href="editarAsignatura.jsp?id=<%= asignatura.getNombre() %>" class="btn btn-warning-custom btn-sm">
                                         <i class="bi bi-pencil-fill"></i> Editar
                                     </a>
@@ -47,18 +47,17 @@
                             <% } %>
                         </tbody>
                     </table>
+                    <!-- Bot贸n para nueva asignatura con icono de m谩s -->
+                    <a href="nuevaAsignatura.jsp" class="btn btn-warning-custom mt-2">
+                        <i class="bi bi-plus-circle-fill"></i> A帽adir Asignatura
+                    </a>
                 </div>
             </div>
         <% } %>
-
-        <!-- Bot髇 para nueva asignatura con icono de m醩 -->
-        <a href="nuevaAsignatura.jsp" class="btn btn-warning-custom mt-2">
-            <i class="bi bi-plus-circle-fill"></i> A馻dir Asignatura
-        </a>
     </div>
 
     <%
-        // Procesar la eliminaci髇 si se recibe la solicitud
+        // Procesar la eliminaci贸n si se recibe la solicitud
         if ("POST".equalsIgnoreCase(request.getMethod())) {
             String nombre = request.getParameter("id");
             if (nombre != null && !nombre.trim().isEmpty()) {
