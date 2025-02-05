@@ -76,10 +76,6 @@ p.lead {
     transition: color 0.3s ease;
 }
 
-.card-title:hover {
-    color: #007bff; /* Color llamativo al pasar el ratón */
-}
-
 .card-text {
     font-size: 1.1rem;
     color: #777;
